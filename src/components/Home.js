@@ -73,12 +73,23 @@ function Home() {
                         <div className="home__jobsTwoShow">
                             <p>
                                 Show more 
-                                
                             </p>
                             <small className='home__jobsTwoShowArrow'>
                                 <ExpandMoreIcon/>
                             </small>
                         </div>
+                    </div>
+                </div>    
+            </div>
+            <div className="home__postJob">
+                <div className="home">
+                    <div className="home__postJobOne">
+                        <h1>Post your job and find the people you need</h1>
+                    </div>
+                    <div className="home__postJobTwo">
+                        <Button className='home__postBtn' variant='outlined'>
+                            Post a job
+                        </Button>
                     </div>
                 </div>
             </div>

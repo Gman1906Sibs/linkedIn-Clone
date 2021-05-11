@@ -102,7 +102,7 @@
   padding-top: 150px;
   display: flex;
   width: 100%;
-  height: 600px;
+  height: 400px;
 }
 
 @media (max-width: 768px) {
@@ -241,4 +241,38 @@
     padding-top: 2px !important;
     padding-left: 0 !important;
   }
+}
+
+.home__postJob {
+  display: flex;
+  height: 240px;
+  width: 100%;
+  background-color: rgba(255, 222, 151, 0.123);
+  padding: 0;
+}
+
+.home__postJobOne {
+  width: 50%;
+}
+
+.home__postJobOne > h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: maroon;
+}
+
+.home__postJobTwo {
+  width: 50%;
+}
+
+.home__postBtn {
+  padding: 10px 18px !important;
+  font-size: 18px !important;
+  text-transform: inherit !important;
+  color: rgb(104, 104, 104) !important;
+  font-weight: bold !important;
+  border-radius: 25px !important;
+  border: 1px solid !important;
+  margin-left: 10px !important;
+  margin-top: 20px !important;
 }
