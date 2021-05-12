@@ -19,8 +19,10 @@
   /* align-items: center; */
   justify-content: center;
   margin: auto;
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
+  .home {
     margin: auto;
     min-height: 0px;
   }
@@ -108,6 +110,7 @@
 @media (max-width: 768px) {
   .home__jobs {
     padding-top: 0px;
+    height: 250px;
   }
 }
 
@@ -251,18 +254,52 @@
   padding: 0;
 }
 
+@media (max-width: 768px) {
+  .home__postJob {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 45px;
+  }
+}
+
 .home__postJobOne {
   width: 50%;
+}
+
+@media (max-width: 768px) {
+  .home__postJobOne {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .home__postJobOne > h1 {
   font-size: 40px;
   font-weight: 500;
-  color: maroon;
+  color: rgb(194, 55, 0);
+  padding-right: 30%;
+}
+
+@media (max-width: 768px) {
+  .home__postJobOne > h1 {
+    font-size: 20px;
+    font-weight: lighter;
+    padding-right: 0;
+  }
 }
 
 .home__postJobTwo {
   width: 50%;
+}
+
+@media (max-width: 768px) {
+  .home__postJobTwo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .home__postBtn {
@@ -275,4 +312,12 @@
   border: 1px solid !important;
   margin-left: 10px !important;
   margin-top: 20px !important;
+}
+
+@media (max-width: 768px) {
+  .home__postBtn {
+    padding: 5px 9px !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+  }
 }
