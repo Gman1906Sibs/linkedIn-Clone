@@ -6,32 +6,49 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Slide from "./SimpleSlider";
 import IMG4 from '../images/lin4.svg';
+import GoogleIcon from '../images/google.svg';
 import IMG5 from '../images/lin5.svg';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import YoutubeEmbed from "./YoutubeEmbed";
 import Logo from '../images/login-logo.svg'
+import styled from 'styled-components';
 import LoginTags from './LoginTags';
+import { connect } from 'react-redux';
+import { signInAPI } from "../actions";
+import { Redirect } from 'react-router-dom';
 
 
-function Login() {
+function Login(props) {
     return (
         <div className="home__topContainer">
+            {props.user && <Redirect to="/home" />}
             <div className="header__topContainer">
+                <LoginHeader>
                 <div className='header'>
-                <div className="header__headerImg">
-                    <img src={Logo} alt=""/>
+                    <div className="header__headerImg">
+                        <img src={Logo} alt=""/>
+                    </div>
+                    <div className="header__right">
+                        <p className='header__joinNow '>Join now</p>
+                        <button className='header__signIn'>Sign in</button>
+                    </div>
+                    <SignIn>
+                    <button className="home__google" onClick={() => props.signIn()}>
+                        <div className="home__googleSignIn">
+                            <img src={GoogleIcon} alt=""/>
+                            <span>Sign in to LinkedIn with Google</span>
+                        </div>
+                    </button>
+                    </SignIn>
                 </div>
-                <div className="header__right">
-                    <p className='header__joinNow '>Join now</p>
-                    <button className='header__signIn'>Sign in</button>
-                </div>
+                </LoginHeader>
             </div>
-        </div>
             <div className='home'>
                 <div className="home__hero">
                     <div className="home__heading">
                         <h1>Welcome to your professional community</h1>
                     </div>
+                   
                     <div className="home__options">
                         <Button variant='outlined' className='home__optionsBtn'>
                             Search for a job
@@ -46,9 +63,9 @@ function Login() {
                             <small className='home__heroArrow'><ArrowForwardIosIcon/></small>
                         </Button>
                     </div>
-                    
                     <img src={HomeIMG} alt=""/>
                 </div>
+
                 <div className="home__jobs">
                     <div className="home__jobsOne">
                         <p>Find open jobs and internships</p>
@@ -225,4 +242,31 @@ function Login() {
     )
 }
 
-export default Login
+const SignIn = styled.div`
+display: none;
+@media (max-width: 768px) {
+    display: flex;
+}
+`;
+
+const LoginHeader = styled.div`
+&:hover {
+    ${SignIn} {
+        display: flex;
+    }
+}
+`;
+
+const mapStateToProps = (state) => {
+    return {
+        user: state.userState.user,
+    };
+};
+
+const mapDispatchToProps = (dispatch) => ({
+    signIn: () => dispatch(signInAPI()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login);
+
+

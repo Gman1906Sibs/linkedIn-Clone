@@ -1,0 +1,84 @@
+.postModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: black;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.postmodal__content {
+  width: 100%;
+  max-width: 555px;
+  background-color: white;
+  max-height: 90%;
+  overflow: initial;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  margin: 0 auto;
+}
+
+.postModal__header {
+  display: block;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postModal__header > button {
+  height: 40px;
+  width: 40px;
+  min-width: auto;
+  color: rgba(0, 0, 0, 0.15);
+}
+
+.postModal__header > button > img {
+  pointer-events: none;
+}
+
+.postModal__sharedContent {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+  vertical-align: baseline;
+  background: transparent;
+  padding: 8px 12px;
+}
+
+.postModal__userInfo {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.postModal__userInfo > img {
+  width: 48px;
+  height: 48px;
+  background-clip: content-box;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.postModal__userInfo > span {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: 5px;
+}
+.postModal__shareConent {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px 12px 16px;
+}

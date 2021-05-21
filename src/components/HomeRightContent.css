@@ -1,0 +1,215 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.followCard {
+  margin-top: 10px;
+  max-width: 329px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: box-shadow 83ms;
+  position: relative;
+  border: none;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
+  padding: 12px;
+}
+
+@media (max-width: 768px) {
+  .followCard {
+    margin-top: 20px;
+    max-width: 85%;
+  }
+}
+
+.followCard__title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.followCard__feedList {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 16px;
+}
+
+.followCard__feedList > ul {
+  display: flex;
+  position: relative;
+  font-size: 14px;
+}
+
+.followCard__feedList > ul > div {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.followCard__feedList > ul > div > button {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 12px 16px;
+  margin: 3px 0;
+  align-items: center;
+  border-radius: 15px;
+  box-sizing: border-box;
+  font-weight: bold;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 32px;
+  max-width: 480px;
+  text-align: center;
+  outline: none;
+}
+
+.followCard__feedList > ul > div > button:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.followCard__avatar {
+  background-image: url("https://www.seekpng.com/png/detail/334-3347140_font-linkedin-white-linkedin-sign-white.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.AddIcon {
+  width: 16px !important;
+}
+
+.followCard__feedListHeader {
+  color: rgba(0, 0, 0, 1) !important;
+  font-weight: bold;
+}
+
+.followCard__recommendations {
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: #1c6ab8;
+  font-size: 15px;
+}
+
+.followCard__recommendations:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+  max-width: 80%;
+}
+
+.followCard__recommendations > img {
+  padding-left: 3px;
+  opacity: 80%;
+}
+
+.coursesCard {
+  margin-top: 10px;
+  max-width: 329px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: box-shadow 83ms;
+  position: relative;
+  border: none;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
+  padding: 12px;
+}
+
+@media (max-width: 768px) {
+  .coursesCard {
+    margin-top: 20px;
+    max-width: 85%;
+  }
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 12px;
+}
+
+.courses:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.coursesCard__heading {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.coursesCard__text {
+  color: rgba(0, 0, 0, 0.6);
+  padding: 5px 15px;
+  font-size: 13px;
+}
+
+.coursesCard__title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.6);
+  padding-left: 12px;
+  padding-right: 12px;
+  max-width: 329px;
+}
+
+.coursesCard__title > img {
+  padding-right: 12px;
+  padding-bottom: 12px;
+}
+
+.coursesCard__title > h2 {
+  padding-bottom: 15px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.bannerCard {
+  margin-top: 10px;
+  max-width: 329px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: box-shadow 83ms;
+  position: relative;
+  border: none;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 270px;
+}
+
+@media (max-width: 768px) {
+  .bannerCard {
+    margin-top: 20px;
+    max-width: 85%;
+  }
+}
+
+.bannerCard > img {
+  width: 320px;
+  height: 270px;
+}
