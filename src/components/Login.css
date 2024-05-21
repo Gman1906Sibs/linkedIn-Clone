@@ -597,11 +597,10 @@
   margin-left: 30%;
 }
 
-@media (max-width: 768px) {
+
   .home__videoBackground p {
-    width: 70vw;
+    width: 50vw;
   }
-}
 
 .home__video > h1 {
   position: absolute;
