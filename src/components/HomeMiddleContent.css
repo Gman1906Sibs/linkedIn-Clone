@@ -96,6 +96,16 @@
   font-weight: bold;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content__loadingIMG {
+  width: 30px;
+}
+
 .article {
   margin-top: 10px;
   max-width: 564px;
@@ -191,7 +201,7 @@
   background-color: #f9fafb;
 }
 
-.article__image > img {
+.article__image > a > img {
   object-fit: contain;
   width: 100%;
   height: 100%;

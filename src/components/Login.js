@@ -118,7 +118,7 @@ function Login(props) {
                 </div>    
             </div>
             <div className="home__postJob">
-                <div className="home">
+                <div className="home__poster">
                     <div className="home__postJobOne">
                         <h1>Post your job and find the people you need</h1>
                     </div>

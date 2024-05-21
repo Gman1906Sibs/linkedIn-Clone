@@ -161,13 +161,13 @@
   .home__hero {
     padding-top: 30px;
     padding-bottom: 15px;
+    padding-right: 60px;
   }
 }
 
 @media (max-width: 768px) {
   .home__heading > h1 {
-    text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     width: 100%;
     line-height: 2px;
   }
@@ -220,7 +220,7 @@
 .home__jobs {
   padding-top: 150px;
   display: flex;
-  width: 100%;
+  width: 90%;
   height: 400px;
 }
 
@@ -595,6 +595,12 @@
   z-index: 0;
   padding-left: 10%;
   margin-left: 30%;
+}
+
+@media (max-width: 768px) {
+  .home__videoBackground p {
+    width: 70vw;
+  }
 }
 
 .home__video > h1 {
